@@ -1,7 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
-
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true,
@@ -36,49 +34,83 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
 
-// var tl = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: "#home",
-//     start: "top top",
-//     scrub: 1,
-//     pin: true,
-//   },
-// });
+var tml = gsap.timeline({
+  scrollTrigger:{
+      trigger:`#home`,
+      start:`top top`,
+      pin:true,
+      scrub:0.15,
+      end:`700% top`
+  },
+})
 
-// tl.to(
-//   "#circle #btm img",
-//   {
-//     rotate: "-180deg",
-//     duration: 1,
-//     ease: Power1,
-//     stagger: 0.1,
-//   },
-//   "hello"
-// )
-//   .to(
-//     "#cimg img",
-//     {
-//       scale: "0",
-//       duration: 1,
-//       ease: Power1,
-//       stagger: 0.1,
-//     },
-//     "hello"
-//   )
-//   .to(
-//     "#overlay #gallery",
-//     {
-//       bottom: "-150%",
-//       ease: Power1,
-//     },
-//     "hello"
-//   )
-//   .to("#cirlce", {
-//     top: "50%",
-//     stagger: 0.2,
-//     duration: 2,
-//     ease: Power1,
-//   });
+
+
+
+tml
+.from("#overlay-center",{
+  left:`90%`
+})
+.to("#circle",{
+  scale:0,
+},`a`)
+.to("#btm-1",{
+  stagger:.15,
+  rotate:`-180deg`,
+  ease:Power1
+},`a`)
+.to("#btm-2",{
+  delay:.034,
+  rotate:`-180deg`,
+  ease:Power1
+},`a`)
+.to("#btm-3",{
+  delay:.07,
+  rotate:`-180deg`,
+  ease:Power1
+},`a`)
+.to("#small-circle",{
+  scale:0.5,
+},`a`)
+.to("#overlay h1",{
+  top:`150%`,
+  delay:-.035
+},`a`)
+.from("#purple-circle",{
+  top:`140%`,
+  scale:0
+},`a`)
+.to("#overlay-center-img",{
+  scale:0,
+},`a`)
+.to("#overlay-center h3",{
+  opacity:0,
+  delay:-.15
+},`a`)
+.to("#overlay>h2",{
+  top:`85%`,
+  rotate:`0deg`,
+  delay:.10
+},`a`)
+.to("#purple-circle",{
+  opacity:0,
+  delay:-.15
+},`b`)
+.to("#small-circle",{
+  scale:0
+},`b`)
+.from("#focus-img",{
+  right:`-10%`,
+  delay:-.15
+})
+.to("#purple-box",{
+  top:0,
+  delay:-.60
+})
+.to("#purple-box",{
+  top:`-90%`,
+  delay:.35
+})
 
 var t2 = gsap.timeline({
   ScrollTrigger: {

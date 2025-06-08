@@ -85,6 +85,213 @@ body {
   background-color: rebeccapurple;
 }
 
+#focus-img {
+  position: absolute;
+  right: 1.4%;
+  top: 48%;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+#focus-img:hover {
+  cursor: pointer;
+}
+#focus-img img {
+  width: 60%;
+}
+
+/* #nav{
+  padding: 60px 60px;
+  height: 7vh;
+  width: 100%;  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 9999999999999999999;
+} */
+
+#right-nav h3 {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+#shades {
+  display: flex;
+  height: 1.5vh;
+  width: 100%;
+  background-color: green;
+}
+#shade1 {
+  height: 100%;
+  width: 16.6%;
+  background-color: rgba(225, 225, 225, 225);
+}
+#shade2 {
+  height: 100%;
+  width: 16.6%;
+  background-color: rgba(187.5, 187.5, 187.5, 187.5);
+}
+#shade3 {
+  height: 100%;
+  width: 16.6%;
+  background-color: rgba(150, 150, 150, 150);
+}
+#shade4 {
+  height: 100%;
+  width: 16.6%;
+  background-color: rgba(112.5, 112.5, 112.5, 112.5);
+}
+#shade5 {
+  height: 100%;
+  width: 16.6%;
+  background-color: rgba(75, 75, 75, 75);
+}
+#shade6 {
+  height: 100%;
+  width: 16.6%;
+  background-color: rgba(37.5, 37.5, 37.5, 37.5);
+}
+#purple-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 7vw;
+  width: 7vw;
+  background-color: #c99eaa;
+  border-radius: 50%;
+  z-index: 9999999;
+}
+#overlay > h2 {
+  position: absolute;
+  color: #fff;
+  font-size: 200px;
+  top: 110%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(20deg);
+  -ms-transform: translate(-50%, -50%) rotate(20deg);
+  transform: translate(-50%, -50%) rotate(20deg);
+  font-weight: 500;
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+}
+#purple-box {
+  height: 60vh;
+  width: 30%;
+  background-color: #d5a7b4;
+  position: absolute;
+  top: 100%;
+}
+#inner-purple {
+  position: relative;
+  height: 40%;
+  width: 30%;
+  font-size: 12px;
+  top: 55%;
+  left: 24%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#inner-purple > span {
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 20px;
+  color: #fff;
+}
+#inner-purple > span > h3 {
+  font-weight: 500;
+  margin-top: 5px;
+}
+#inner-purple > h3 {
+  color: #fff;
+  font-weight: 500;
+}
+#inner-purple-btm {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 80px;
+  height: 8vh;
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  color: #fff;
+}
+#inner-purple-btm > h2 > span {
+  font-size: 12px;
+  position: absolute;
+  left: 7%;
+  font-weight: 500;
+}
+#inner-purple-btm > h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+#inner-purple-btm > h3 > span {
+  font-size: 12px;
+  position: absolute;
+  left: 50%;
+  font-weight: 500;
+}
+#inner-purple-btm > h3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+#focus-img {
+  position: absolute;
+  right: 1.4%;
+  top: 48%;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+#focus-img:hover {
+  cursor: pointer;
+}
+#focus-img img {
+  width: 60%;
+}
+#focus-blur {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+  -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+  display: none;
+}
+#focus-blur img {
+  width: 100%;
+}
+#focus {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+  -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+}
+#focus img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 35%;
+}
+
 #home #nav #second #nav {
   width: 100%;
   display: flex;
